@@ -1,0 +1,33 @@
+
+main{
+    margin-top: 80px;
+
+}
+body{
+    background-color: #eee !important;
+}
+.leftColumn{
+     overflow: hidden;
+float: left;
+     width: 50%;
+}
+.rightColumn{
+    overflow: hidden;
+    width: 50%;
+    float: right;
+}
+.comment{
+    width: auto !important;
+    margin: 20px;
+    border-radius: 0 !important;
+    float: none !important;
+    
+}
+.comment img{
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+}
+h1{
+   text-align: center;
+}

@@ -1,0 +1,106 @@
+.companyContacts img{
+width: 25px;
+margin: 10px;
+
+}
+main{
+    margin-top: 100px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.BIG{
+    padding-bottom: 20px;
+    border-left: 2.5px solid #222;
+    padding-left:25px ;
+    
+}
+iframe{
+    display: block;
+    float: right;
+    width: 50%;
+}
+.companyContacts{
+    display: block;
+    float: left;
+    width: 50%;
+    vertical-align: top;
+    background-color: white;
+    text-align: left;
+    height: 450px;
+    padding: 20px;
+    list-style: none;
+    box-sizing: border-box;
+    line-height: 27px;
+
+
+    
+}
+.companyContacts li{
+    padding: 20px 0;
+    border-bottom:1px solid #eee ;
+}
+.companyContacts li:nth-child(4){
+margin-bottom: 13px;
+}
+.companyContacts p{
+    padding-bottom: 13px;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+.contacts{
+text-align: center;
+
+}
+.graySection{
+    background-color: #eee;
+    overflow: hidden;
+    padding-bottom: 65px;
+}
+.aboutCompany{
+   margin-bottom: 60px !important; 
+}
+.person>img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+    object-fit: cover;
+    float: left;
+}
+.person p img{
+    width: 20px;
+    vertical-align:middle ;
+    margin-right: 10px;
+}
+.person div{
+    float: left;
+    margin-left:25px ;
+}
+.person{
+    width: calc(100% / 3);
+    float: left;
+    margin: 19px 0;
+}
+.person p{
+    vertical-align:middle ;
+    margin: 5px;
+}
+.person:last-child{
+    margin-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

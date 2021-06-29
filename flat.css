@@ -1,0 +1,91 @@
+
+body{
+    background-color: #eee;
+    font-family: 'Comfortaa', cursive;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 33px;
+    /* letter-spacing: 1px; */
+    color: #222;
+    text-align: center;
+    margin-top: 90px;
+}
+.gallery img{
+width: 100%;
+height: 250px;
+object-fit: cover;
+border: 2px solid transparent;
+box-sizing: border-box;
+
+}
+.gallery{
+    display: grid;
+    width: 45%;
+    grid-template-areas: 
+    "flatImg1 flatImg1"
+    "flatImg2 flatImg3"
+    "flatImg2 flatImg4"
+    "flatImg5 flatImg5";
+    float: left;
+}
+#flatImg1{
+    grid-area: flatImg1;
+    border-top: none;
+}
+#flatImg2{
+    grid-area: flatImg2;
+    height: 500px;
+}
+#flatImg3{
+    grid-area: flatImg3;
+
+}
+#flatImg4{
+    grid-area: flatImg4;
+
+}
+#flatImg5{
+    grid-area: flatImg5;
+    border-bottom: none;
+
+}
+.flatInfo img{
+    width: 20px;
+    vertical-align: middle ;
+}
+.flatInfo{
+    float: right;
+    width: calc(55% - 10px);
+    background-color: white;
+    border: 1px solid black;
+    padding: 30px;
+    box-sizing: border-box;
+    
+    
+}
+.flatInfo a{
+    border: 3px solid black;
+    padding: 7px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px 0;
+}
+.flatInfo section{
+    display: inline-block;
+}
+.flatInfo section p{
+    display: inline-block;
+    vertical-align: middle ;margin: 13px 0;
+}
+.flatInfo li{
+    /* list-style-image: url("markIcon.svg"); */
+    list-style: none;
+}
+iframe{
+    width: calc(55% - 10px);
+    float: right;
+    border: 1px solid black !important;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
