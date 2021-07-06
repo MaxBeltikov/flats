@@ -1,0 +1,497 @@
+/* чтобы поставить теги со свойством display:inline-block по центру нужно их родителю задать text-align:center */
+
+/* чтобы поставить теги со свойством display:block по центру нужно им самим задать margin:auto */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #1b1b1b;
+    font-size: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
+.logo {
+    background-color: #1b1b1b;
+    display: inline-block;
+    height: 50px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    margin-top: 10px;
+    filter: invert(100%);
+}
+
+nav {
+    position: absolute;
+    transform: translateY(-100%);
+    transition: 0.3s;
+    background-color: #1b1b1b;
+}
+
+.menu {
+    background-color: wheat;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 18px;
+    background-color: #1b1b1b;
+}
+
+.menu li:hover nav {
+    transform: translateY(0);
+}
+
+.menu li>a {
+    line-height: 60px;
+    display: inline-block;
+    padding: 0 15px;
+    z-index: 1;
+    position: relative;
+    background-color: #1b1b1b;
+}
+
+.phoneSection {
+    background-color: #1b1b1b;
+    float: right;
+    font-family: 'Comfortaa', cursive;
+    top: 0;
+}
+
+.phoneSection a {
+    font-size: 18px;
+    display: inline-block;
+}
+
+.phoneSection p {
+    display: inline-block;
+    line-height: 60px;
+    vertical-align: top;
+    padding: 0 10px;
+}
+
+.phoneSection img {
+    height: 30px;
+    margin-top: 15px;
+    filter: invert(100%);
+}
+
+.call {
+    background-color: #212121;
+    line-height: 36px;
+    margin-top: 10px;
+    vertical-align: top;
+    color: white;
+    border: 2px solid white;
+    padding: 0 35px;
+    border-radius: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    display: block;
+    line-height: 50px;
+    padding: 0 5px;
+}
+
+.phonemodal {
+    position: fixed;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translateY(100%) scale(0);
+    opacity: 0;
+    transition: .5s;
+}
+
+.phonemodal form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba( 0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+}
+
+.phonemodal form h3 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ccc;
+    transition: .3s;
+}
+
+.phonemodal form input, .phonemodal form button {
+    width: 100%;
+    font-size: 16px;
+    padding: 0 5px;
+    line-height: 40px;
+    box-sizing: border-box;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.phonemodal form button:hover {
+    border: 1px solid #555;
+}
+
+.phonemodal form input:focus {
+    border: 1px solid #555;
+}
+
+.phonemodal * {
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #424242;
+}
+
+main {
+    overflow: hidden;
+}
+
+.sliderButtons {
+    text-align: center;
+    font-size: 0;
+    transform: translateY(-50%);
+}
+
+.sliderButtons a {
+    background-color: white;
+    border-radius: 30px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 0 5px;
+    box-shadow: 0 0 11px rgba( 0, 0, 0, 0.4);
+}
+
+.sliderButtons img {
+    display: block;
+    height: 20px;
+    margin: 20px auto;
+}
+
+.sliderButtons a:first-child img {
+    transform: rotate(180deg);
+}
+
+.slider {
+    background-color: royalblue;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.3s;
+    /* transform: translateX(50%); */
+}
+
+.slide {
+    display: inline-block;
+    width: 100%;
+    background-color: salmon;
+    background-image: url("flat1.jpg");
+    background-position: center;
+    white-space: normal;
+}
+
+.slide:nth-child(2) {
+    background-image: url("flat2.jpg");
+}
+
+.slide:nth-child(3) {
+    background-image: url("flat3.jpg");
+}
+
+.slide h2 {
+    font-size: 60px;
+    margin: 100px 50px 50px;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px black;
+    font-family: 'Comfortaa', cursive;
+}
+
+.slide p {
+    font-size: 18px;
+    margin: 0 50px 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 60%;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 10px;
+}
+
+.slide a {
+    display: inline-block;
+    font-size: 18px;
+    color: #111;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 0 50px 100px;
+    font-weight: 700;
+    padding: 15px 4px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba( 0, 0, 0, 0.4);
+    font-family: 'Comfortaa', cursive;
+    transform: perspective(1px) scale(1) translateZ(0);
+    transition: 0.4s;
+}
+
+.slide a:hover {
+    background-color: white;
+    transform: perspective(1px) scale(1.05) translateZ(0);
+    transition: 0.3s;
+    box-shadow: 3px 3px 20px rgba( 0, 0, 0, 0.4);
+}
+
+.flats {
+    text-align: center;
+    font-size: 0;
+}
+
+.flat {
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba( 0, 0, 0, 0.2);
+    display: inline-block;
+    width: calc((100% - 30px) / 3);
+    margin: 5px;
+    font-family: 'Noto Sans', serif;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.flat>img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 0;
+}
+
+.sectionTitle {
+    margin-bottom: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-size: 33px;
+    /* letter-spacing: 1px; */
+    color: #222;
+    text-align: center;
+}
+
+.flat h4 {
+    font-size: 20px;
+}
+
+.flat>p {
+    font-size: 20px;
+}
+
+.flat section p {
+    font-size: 15px;
+    line-height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4px;
+}
+
+.flat section img {
+    height: 20px;
+}
+
+.flat section {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.flat>* {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.pair {
+    /* background-color: darkslategray; */
+    /* overflow: hidden; */
+    position: absolute;
+    opacity: 0;
+    transition: 0.3s;
+}
+.activePair{
+    opacity: 1;
+}
+.pair img {
+    width: 50px;
+    height: 50px;
+    border-radius: 26px;
+    object-fit: cover;
+}
+.comments{
+position: relative;
+height: 330px;
+background-color: white;
+}
+
+.comment {
+    width: calc(50% - 5px);
+    background-color: white;
+    float: left;
+    box-shadow: 0 0 10px rgba( 0, 0, 0, 0.2);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.comment:last-child {
+    float: right;
+}
+
+.userInfo {
+    display: inline-block;
+    line-height: 25px;
+    vertical-align: top;
+}
+.comments .sliderButtons{
+    position: absolute;
+    bottom: 90px;
+    width: 100%;
+    transform: none;
+}
+.comment p{
+    margin-bottom:10px ;
+}
+footer{
+    background-color: #1b1b1b;
+    padding: 50px 0;
+    overflow: hidden;
+
+}
+.footerContacts{
+float:right;
+}
+.footerContacts img{
+width: 20px;
+height: 50px;
+}
+#location{
+    float: left;
+    margin-right: 30px;
+}
+.footerContacts>div{
+    float: right; 
+    width: 230px;
+}
+.footerContacts p{
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: top;
+    font-size: 20px;
+}
+.footerPhone{
+    display: inline-block;
+    width: 100% ;
+    text-align: center;
+    font-size: 0;
+}
+footer a{
+    color: white;
+}
+.footerContacts img{
+    filter: invert(100%);
+}
+.social a{
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+    
+}
+.social{
+    font-size: 0;
+}
+@media (max-width:600px){
+    .menu{
+        display: none;
+    }
+    header{
+        text-align: center;
+    }
+    .phoneSection{
+        display: none;
+    }
+    .logo img{
+        margin-top: 5px;
+    }
+    label{
+        position: absolute;
+        left: 0;
+        background-color: #1b1b1b;
+        width: 50px;
+        height: 50px;
+        
+    }
+    label span{
+        width: 60%;
+        height: 2px;
+        background-color: whitesmoke;
+        position: absolute;
+        left:20%;
+        top: 50%;
+        transition: 0.4s;
+        
+    }
+    label span::before{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 8px;
+        left: 0;
+    }
+    label span::after{
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: whitesmoke;
+        position: absolute;
+        top: -8px;
+        left: 0;
+    }
+    #check{
+        position: absolute;
+        left: 0;
+        
+    }
+    #check:checked ~ label span{
+transform: rotate(90deg);
+
+    }
+}
