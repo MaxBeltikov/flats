@@ -436,6 +436,9 @@ footer a{
 .social{
     font-size: 0;
 }
+#check{
+    display: none;
+}
 @media (max-width:600px){
     .menu{
     position: fixed;
@@ -443,6 +446,10 @@ footer a{
     top: 50px;
     left: 0;
     transform: translateX(-100%);
+    width: 100%;
+    transition: 0.3s;
+    background-color: #1b1b1b;
+    padding-top:50px ;
     }
     header{
         text-align: center;
@@ -495,6 +502,7 @@ footer a{
         position: absolute;
         left: 0;
         
+        
     }
     #check:checked ~ label span{
 transform: rotate(45deg);
@@ -512,4 +520,69 @@ transform: rotate(45deg);
     #check:checked ~ .menu{
         transform: none;
     }
+    .menu li{
+        display: block;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    nav{
+        position: static;
+        transform: none;
+        font-size: 15px;
+        background-color: #212121;
+    }
+    .slide h2{
+        font-size: 35px;
+        margin: 100px 10px 10px;
+        text-align: center;
+    }
+    .slide p{
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-sizing: border-box;
+        text-align: center;
+        
+    }
+    .slide a{
+        display: block;
+        margin-top: 30px;
+        text-align: center; 
+    }
+    .flat{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .comment{
+        width: 90%;
+        text-align: center;
+        float: none;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .comment:last-child{
+        float: none;
+    }
+    .comments{
+        height:580px;
+    }
+    .comments .sliderButtons{
+bottom: 30px;
+
+    }
+    footer{
+        text-align: center;
+    }
+    .footerContacts p{
+        font-size: 16px;
+    }
+    #location {
+float: none;
+    }
+    .footerContacts>div{
+        float: none;
+        width: auto;
+    }
+
 }

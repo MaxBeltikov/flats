@@ -31,3 +31,17 @@ float: left;
 h1{
    text-align: center;
 }
+@media (max-width:600px) {
+    .comment{
+        display: block;
+    }
+    .leftColumn, .rightColumn{
+        width: 100%;
+    }
+    .comment p{
+        text-align: left;
+    }
+    .comment div{
+        text-align: left;
+    }
+}

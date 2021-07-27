@@ -26,7 +26,7 @@ iframe{
     display: block;
     float: left;
     width: 50%;
-    vertical-align: top;
+    vertical-align:top;
     background-color: white;
     text-align: left;
     height: 450px;
@@ -91,16 +91,42 @@ text-align: center;
 .person:last-child{
     margin-bottom: 150px;
 }
+@media (max-width:600px){
+.aboutCompany p{
+    text-align: left;
+    
+}
+.aboutCompany{
+    width: 90%;
+}
+.companyContacts{
+    display: block;
+    width: 100%;
+}
+iframe{
+    width: 100%;
+}
+.person{
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+    padding-bottom: 20px; ;
 
-
-
-
-
-
-
-
-
-
-
-
+}
+.person div{
+    float: none;
+    margin: 0;
+}
+.person h2{
+    font-size: 20px;
+}
+.person img{
+    float: none;
+    
+}
+.person:last-child{
+    margin-bottom: 0;
+}
 

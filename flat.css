@@ -89,3 +89,16 @@ iframe{
     margin: 8px 0;
     box-sizing: border-box;
 }
+@media (max-width:600px){
+    .flatInfo{
+        display: block;
+    width: 100%;
+    text-align: center;
+    }
+    .gallery{
+        width: 100%;
+    }
+    #iframe{
+        width: 100%;
+    }
+}
